@@ -20,7 +20,7 @@ def main():
     print("\nMissing values:")
     print(df.isna().sum())
     print("\nNumeric summary:")
-    print(df.describe(numeric_only=True))
+    print(df.select_dtypes(include="number").describe())
 
     # Save a region-level summary.
     summary = df.groupby("region", as_index=False).agg(
