@@ -5,3 +5,6 @@ __pycache__/
 venv/
 .env
 .DS_Store
+
+# Local backup folder
+data-science-fundamentals-assessment-backup/
