@@ -1,8 +1,12 @@
 # Data Science Fundamentals Assessment
 
-A beginner-friendly project demonstrating Python basics, descriptive statistics, data types, data cleaning, summary analysis, correlation, and visualization.
+## About the Project
 
-## Project structure
+This project covers basic concepts of data science using Python. It includes simple Python programs, statistical calculations, and an analysis of sample order data.
+
+The project helped me practise working with data, calculating summary statistics, identifying relationships between numerical columns, and presenting results using a chart.
+
+## Project Structure
 
 ```text
 data-science-fundamentals-assessment/
@@ -17,26 +21,80 @@ data-science-fundamentals-assessment/
 │   ├── statistics_analysis.py
 │   └── data_analysis.py
 ├── outputs/
+│   ├── correlation_matrix.csv
+│   ├── orders_by_region.png
+│   └── region_summary.csv
 └── report/
     └── Data_Science_Fundamentals_Assessment.docx
 ```
 
-## Requirements
+## Tools and Libraries
 
-- Python 3.10 or later recommended
-- pandas
-- matplotlib
-- Jupyter (optional, for running the notebook)
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Jupyter Notebook
 
-Install dependencies:
+## Topics Covered
+
+### 1. Python Basics
+- Variables and data types
+- Conditional statements
+- Functions
+- Lists, tuples, dictionaries, and sets
+
+### 2. Statistics
+- Mean, median, and mode
+- Minimum and maximum values
+- Sample variance
+- Sample standard deviation
+
+### 3. Data Analysis
+- Reading CSV files using Pandas
+- Converting date columns
+- Checking missing values
+- Generating descriptive statistics
+- Grouping data by region
+- Calculating correlations between numerical columns
+
+### 4. Data Visualization
+- Creating a bar chart using Matplotlib
+- Saving the chart for later use
+
+## Dataset
+
+The file `data/sample_data.csv` contains a small sample dataset with information about order regions, product categories, order counts, delivery duration, customer ratings, and dates.
+
+The dataset is intended for practice and does not contain real customer information.
+
+## Results
+
+The analysis generates the following outputs:
+
+- `region_summary.csv` — summary statistics grouped by region.
+- `correlation_matrix.csv` — correlations between numerical variables.
+- `orders_by_region.png` — a bar chart showing order counts by region.
+
+The sample dataset is small, so the results are useful for practising data analysis rather than drawing conclusions about real-world business operations.
+
+## How to Run the Project
+
+### 1. Install Python
+
+Install Python if it is not already available on your computer.
+
+### 2. Install the required libraries
+
+Open a terminal in the project directory and run:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-## Run the project
+### 3. Run the Python programs
 
-From the project root:
+Run each program from the project root:
 
 ```bash
 python src/python_basics.py
@@ -44,30 +102,16 @@ python src/statistics_analysis.py
 python src/data_analysis.py
 ```
 
-To open the notebook:
+### 4. Open the Jupyter Notebook
+
+Run:
 
 ```bash
 jupyter notebook
 ```
 
-Then open `notebooks/data_science_fundamentals.ipynb`.
+Open `notebooks/data_science_fundamentals.ipynb` in the notebook interface.
 
-## Dataset
+## Important Note
 
-`data/sample_data.csv` is a small illustrative dataset created for learning. It includes order region, product category, order counts, delivery duration, customer ratings, and dates. It does not contain real customer information.
-
-## What you will learn
-
-1. Variables, conditionals, functions, and collection types.
-2. Mean, median, mode, sample variance, and sample standard deviation.
-3. Loading CSV files with pandas and converting date columns.
-4. Checking missing values and summarizing numeric columns.
-5. Grouping data by region and computing correlation.
-6. Creating and saving a bar chart with matplotlib.
-
-## Notes
-
-- Correlation indicates association, not causation.
-- The dataset is small and illustrative; conclusions should not be generalized to real operations.
-- Run the code in your own environment and check the generated outputs before submitting.
-- Add your own name and the final report to `report/` before publishing if required by your assessment.
+Correlation shows a relationship between variables, but it does not prove that one variable causes changes in another. Since this project uses a small sample dataset, its results should not be generalized to larger datasets without further analysis.
